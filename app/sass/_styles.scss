@@ -145,7 +145,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
+    position: relative;
 
     &-wrap {}
 
@@ -392,6 +392,7 @@
 
     &-content{
         padding: 188px 0 256px 0;
+        
         @include r(1440){
             padding: 182px 0 256px 0;
         }
@@ -472,7 +473,7 @@
     &-btn{
         width: 230px;
         height: 60px;
-        @include r(480){
+        @include r(600){
             margin: 0 auto;
             width: 100%;
             max-width: 230px;
@@ -482,6 +483,42 @@
             width: 100%;
             max-width: 280px;
         }
+    }
+
+    &-scroll{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 95px;
+        user-select: none;
+        @include r(1440){
+        bottom: 100px;
+        }
+        @include r(920){
+        bottom: 87px;
+        }
+        @include r(600){
+            display: none;
+        }
+    }
+    &-scrollImg{
+        width: 20px;
+        height: 30px;
+    }
+    &-scrollText{
+        opacity: 0.2;
+        color: $white;
+        font-family: $font;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1;
+        text-transform: uppercase;
+        letter-spacing: 2.8px;
+        transform: rotate(90deg);
+        margin-top: 60px;
     }
 }
 
@@ -497,12 +534,6 @@
         margin-top: -55px;
 
     }
-
-    @include r(920) {}
-
-    @include r(768) {}
-
-
     @include r(480) {
         background-position: 88%;
     }
@@ -2039,4 +2070,26 @@
 
 .second-color{
     color: $gold;
+}
+
+.third-section{
+
+    &-wrap{
+
+    }
+    &-item{
+
+    }
+    &-left{
+
+    }
+    &-right{
+
+    }
+    &-headline{
+
+    }
+    &-text{
+
+    }
 }
