@@ -330,6 +330,9 @@
             @include r(920){
                 top: calc(50% + 1px);
             }
+            @include r(480){
+                top: 50%;
+            }
         }
     }
 
