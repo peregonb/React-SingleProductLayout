@@ -1,0 +1,24 @@
+@mixin r($width) {
+  @media only screen and (max-width: $width+ "px") {
+    @content
+  }
+
+}
+
+@mixin rm($width) {
+  @media only screen and (min-width: $width+ "px") {
+    @content
+  }
+
+}
+
+@mixin fixjoggle {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
