@@ -1,7 +1,7 @@
 .btn-white{
     background-color: $white;
     @include center;
-    color: #070707;
+    color: $black-bright;
     font-family: $font;
     font-size: 15px;
     font-weight: 900;
@@ -12,6 +12,23 @@
     transition: background-color $t;
     &:hover{
         background-color: rgba($white, .8);
+        transition: background-color $t;
+    }
+}
+.btn-black{
+    background-color: $black;
+    @include center;
+    color: $white;
+    font-family: $font;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: background-color $t;
+    &:hover{
+        background-color: rgba($black, .8);
         transition: background-color $t;
     }
 }
