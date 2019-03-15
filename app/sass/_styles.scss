@@ -2295,11 +2295,11 @@ height: 16px;
         }
 
         @include r(600) {
-            font-size: 25px;
+            font-size: 24px;
         }
 
         @include r(480) {
-            font-size: 20px;
+            font-size: 24px;
         }
     }
 }

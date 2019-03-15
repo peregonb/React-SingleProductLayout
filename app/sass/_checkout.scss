@@ -74,9 +74,9 @@
         }
     }
 
-    &-btn{
+    &-btn {
         width: 230px;
-height: 60px;
+        height: 60px;
     }
 
     &-close {
@@ -345,9 +345,11 @@ height: 60px;
         flex-grow: 1;
         position: relative;
         padding-top: 42px;
-        @include r(420){
-           padding-bottom: 20px;
+
+        @include r(420) {
+            padding-bottom: 20px;
         }
+
         &:before {
             content: "";
             position: absolute;
@@ -425,7 +427,8 @@ height: 60px;
         line-height: 1;
         text-transform: uppercase;
         margin-bottom: 28px;
-        @include r(420){
+
+        @include r(420) {
             margin-bottom: 0;
         }
     }
@@ -437,9 +440,11 @@ height: 60px;
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        @include r(420){
+
+        @include r(420) {
             margin-top: 20px;
         }
+
         img {
             &:nth-child(1) {
                 width: 56px;
@@ -498,7 +503,8 @@ height: 60px;
         flex-direction: column;
         padding-top: 30px;
         align-items: center;
-        @include r(420){
+
+        @include r(420) {
             padding-top: 20px;
         }
     }

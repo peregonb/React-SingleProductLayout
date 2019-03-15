@@ -1,4 +1,11 @@
-.btn-white{
+button[class^="btn-"],
+button[class*=" btn-"] {
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.btn-white {
     background-color: $white;
     @include center;
     color: $black-bright;
@@ -9,13 +16,38 @@
     text-transform: uppercase;
     letter-spacing: 1.5px;
     cursor: pointer;
+    
     transition: background-color $t;
-    &:hover{
+
+    &:hover {
         background-color: rgba($white, .8);
         transition: background-color $t;
     }
 }
-.btn-black{
+
+.btn-white-bordered{
+    background-color: $white;
+    @include center;
+    color: $black-bright;
+    font-family: $font;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    border: 1px solid $second-black;
+    box-sizing: border-box;
+    transition: color $t, border $t;
+
+    &:hover {
+        color: rgba($black-bright, .8);
+        border-color: rgba($second-black, .8);
+        transition: color $t, border $t;
+    }
+}
+
+.btn-black {
     background-color: $black;
     @include center;
     color: $white;
@@ -27,7 +59,8 @@
     letter-spacing: 1.5px;
     cursor: pointer;
     transition: background-color $t;
-    &:hover{
+
+    &:hover {
         background-color: rgba($black, .8);
         transition: background-color $t;
     }
