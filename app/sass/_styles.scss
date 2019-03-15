@@ -581,7 +581,9 @@
 
         @include r(768) {}
 
-        @include r(480) {}
+        @include r(480) {
+            justify-content: center;
+        }
     }
 
     &-item {
@@ -598,14 +600,14 @@
         }
 
         @include r(480) {
-            width: 100%;
             border-right: none;
             margin-bottom: 20px;
-        }
-
-        @include r(320) {
+            width: 235px;
+            display: flex;
             justify-content: flex-start;
         }
+
+    
 
 
         &:nth-child(1),
