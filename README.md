@@ -1,2 +1,1 @@
-Mobigeek project
-
+Single Project Layout
