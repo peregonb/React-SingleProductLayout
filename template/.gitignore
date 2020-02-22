@@ -5,3 +5,8 @@
 /**/Thumbs.db
 /**/*.DS_Store
 ../.idea
+../node_modules
+../single-product-layout/node_modules
+../single-product-layout/yarn.lock
+./node_modules
+./yarn.lock

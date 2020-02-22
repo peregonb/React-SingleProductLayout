@@ -55,13 +55,13 @@ $(window).on('load resize', function () {
 
 
 
-$('.faq-top').on('click', function () {
-   $(this).closest($('.faq-item')).toggleClass('active');
-   $(this).closest($('.faq-item')).find($('.faq-bottom')).slideToggle(300);
-
-   $('.faq-top').not($(this)).closest($('.faq-item.active')).find($('.faq-bottom')).slideToggle(300);
-   $('.faq-top').not($(this)).closest($('.faq-item.active')).toggleClass('active');
-});
+// $('.faq-top').on('click', function () {
+//    $(this).closest($('.faq-item')).toggleClass('active');
+//    $(this).closest($('.faq-item')).find($('.faq-bottom')).slideToggle(300);
+//
+//    $('.faq-top').not($(this)).closest($('.faq-item.active')).find($('.faq-bottom')).slideToggle(300);
+//    $('.faq-top').not($(this)).closest($('.faq-item.active')).toggleClass('active');
+// });
 
 
 if ($('.fourth-section-slider').length) {
